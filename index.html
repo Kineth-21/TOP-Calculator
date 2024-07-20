@@ -10,30 +10,36 @@
 <body>
     <h1 class="title">Calculator</h1>
     <div id="container">
-        <input id="display" type="text" readonly placeholder="testing">
+        <input id="display" type="text" readonly placeholder="0">
         <div id="buttonContainer">
             <div id="firstRow">
-                <button class="firstThreeButtons">AC</button>
-                <button class="firstThreeButtons">+/-</button>
-                <button class="firstThreeButtons">%</button>
-                <button class="lastButtons">&divide</button>
+                <button id="clear" class="firstThreeButtons">AC</button>
+                <button id="sign" class="firstThreeButtons">+/-</button>
+                <button id="percent" class="firstThreeButtons" value="%">%</button>
+                <button class="lastButtons operand" value="/">&divide</button>
             </div>
             <div id="secondRow">
-                <button>7</button>
-                <button>8</button>
-                <button>9</button>
-                <button class="lastButtons">&times</button>
+                <button class="number" value="7">7</button>
+                <button class="number" value="8">8</button>
+                <button class="number" value="9">9</button>
+                <button class="lastButtons operand" value="*">&times</button>
             </div>
             <div id="thirdRow">
-                <button>4</button>
-                <button>5</button>
-                <button>6</button>
-                <button class="lastButtons">&minus;</button>
+                <button class="number" value="4">4</button>
+                <button class="number" value="5">5</button>
+                <button class="number" value="6">6</button>
+                <button class="lastButtons operand" value="-">&minus;</button>
             </div>
             <div id="fourthRow">
-                <button id="zeroButton">0</button>
-                <button>.</button>
-                <button class="lastButtons">=</button>
+                <button class="number" value="1">1</button>
+                <button class="number" value="2">2</button>
+                <button class="number" value="3">3</button>
+                <button class="lastButtons operand" value="+">+</button>
+            </div>
+            <div id="fifthRow">
+                <button id="zeroButton" class="number" value="0">0</button>
+                <button id="decimalPt" value=".">.</button>
+                <button id="equals" class="lastButtons" value="=">=</button>
             </div>
         </div>
     </div>
