@@ -1,0 +1,96 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title{
+    flex: 0;
+}
+
+#container{
+    background-color: black;
+    border: 5px solid grey;
+    border-radius: 25px;
+    padding: 10px;
+    display: flex;
+    flex-flow: column nowrap;
+    flex: 1;
+    aspect-ratio: 1 / 1.2;
+}
+
+#display{
+    background-color: black;
+    border: none;
+    padding-right: 5px;
+    text-align: end;
+    color: white;
+    font-size: 300%;
+    /* border: 5px solid blue; */
+    flex: 1 1 0;
+}
+
+#buttonContainer{
+    display: flex;
+    flex-flow: column nowrap;
+    /* border: 5px solid indigo; */
+    flex: 1 1 0;
+    gap: 5px;
+    aspect-ratio: 1 / 1;
+}
+
+#firstRow, #secondRow, #thirdRow, #fourthRow{
+    display: flex;
+    flex-wrap: nowrap;
+    flex: 1;
+    gap: 5px;
+    aspect-ratio: 4 / 1;
+}
+
+button{
+    flex: 1 1 0;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    font-size: 200%;
+    background-color: rgb(51, 51, 51);
+    color: white;
+    border: none;
+}
+
+#zeroButton{
+    flex: 2 1 0;
+    aspect-ratio: 2 / 1;
+    border-radius: 30px;
+}
+
+.firstThreeButtons{
+    color: black;
+    background-color:  rgb(165, 165, 165);
+}
+
+.lastButtons{
+    background-color: rgb(255, 159, 10);
+    color: white;
+}
+
+button:hover{
+    filter: brightness(130%);
+    cursor: pointer;
+}
+
+.lastButtons:active{
+    background-color: white;
+    color: rgb(255, 159, 10);
+}
+
+
